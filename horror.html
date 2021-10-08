@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror</title>
+
+    <link rel="shortcut icon" href="imagesstream/fav icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+
+
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    /* HEADER AND NAV */
+
+    .kiran {
+        background-color: black;
+        position: sticky;
+        font-family: Forte;
+        font-size: 22px;
+    }
+
+    .button {
+        background-color: black;
+    }
+
+    .n1 {
+        float: right;
+    }
+
+    .img1 {
+        height: 245px;
+        margin: -17px;
+    }
+
+    .span1 {
+        height: 5px;
+        width: 5px;
+        margin-top: -3px;
+        margin-left: -12px;
+        font-size: 8px;
+    }
+
+    /* <sign> */
+    .sin {
+        margin-right: 27px;
+        height: 38px;
+        width: 84px;
+    }
+
+    @media screen and (max-width:500px) {
+        .sin {
+            margin-left: 180px;
+        }
+
+    }
+
+    /* FOOTER */
+    .F1 {
+        color: #fff;
+        list-style-type: none;
+
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .img3 {
+        height: 228px;
+        width: 310px;
+        border-radius: 20px;
+    }
+
+    .container {
+        height: 500px;
+    }
+
+    /* animate */
+    .animate {
+        width: 100%;
+        margin-top: 8px;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 342px;
+    }
+
+    /* slideshow */
+    .img2 {
+        height: 250px;
+        width: 507px;
+        border-radius: 20px;
+        margin: -10px;
+    }
+
+
+    .d1 {
+        margin-top: 29px;
+        font-size: 43px;
+        font-family: Forte;
+    }
+
+    body {
+        background-color: black;
+        font-family: Forte;
+    }
+
+    input {
+        width: 50px;
+    }
+
+    footer {
+        font-family: Forte;
+    }
+
+    .slide {
+        height: 500px;
+    }
+
+    .i1 {
+        height: 500px;
+    }
+
+    .team {
+        border: 5px solid #ddd;
+    }
+
+    .kids h2 {
+        font-weight: 400;
+        margin: 0px;
+        padding-left: 5px 20px;
+        font-size: 2.7rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        width: 100%;
+        color: #fff;
+    }
+
+    .kids {
+        display: flex;
+        margin: 0px 2%;
+    }
+
+    .ibox {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        border-top: 3px solid black;
+
+    }
+
+    .i-img {
+        width: 100%;
+        height: 400px;
+        position: relative;
+
+    }
+
+    .i-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .ibox:hover {
+        transform: translateY(-15px);
+        transition: all ease 0.2s;
+    }
+
+    #kids-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* <slide> */
+    #last {
+        border-top: 1px solid rgb(53, 53, 53, 0.1);
+    }
+
+    .head {
+        margin: 30px 30px 0px 30px;
+        font-weight: 500;
+        font-size: 2.7rem;
+        color: #fff;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 2px 30px rgba(0.0.0.0.04);
+        margin: 20px 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 200px;
+        background-color: black;
+
+    }
+
+    .cs-hidden {
+        overflow: visible !important;
+    }
+
+    .box-img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .box-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    #show-case {
+        padding-top: 80px;
+        background-color: black;
+
+    }
+
+    .simg {
+        width: 430px;
+        height: 250px;
+        box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin: 0px 20px 10px 20px;
+        overflow: hidden;
+
+    }
+
+    .simg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .lift {
+        position: relative;
+        margin: 20px 20px 0 0;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .lift:before {
+        content: '';
+        position: absolute;
+        left: 120%;
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(90deg, transparent, 0%, #000 5%, #000 100%);
+        animation: animate 10s linear forwards;
+        animation-delay: 2s;
+
+    }
+
+    @keyframes animate {
+        0% {
+            left: -20%;
+        }
+
+        50% {
+            left: 120%;
+        }
+
+        100% {
+            left: -20%;
+        }
+    }
+
+    video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+        pointer-events: none;
+        mix-blend-mode: screen;
+
+    }
+</style>
+
+<body>
+
+    <header class="navbar">
+        <img src="imagesstream/w.gif" class="img1">
+
+
+        <form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search....">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light button" style="font-family: Forte;">Search</button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md  navbar-dark kiran">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="movie.html" class="nav-link">Movies</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="stream.html" class="nav-link">Stream <span class="badge span1"
+                            style="color: red; position: absolute;">NEW</span></a>
+                </li>
+                <li class="navbar-item">
+                    <a href="horror.html" class="nav-link">horror <span class="badge span1"
+                            style="color: red; position: absolute;">NEW</span></a>
+                </li>
+                <li class="navbar-item">
+                    <a href="play.html" class="nav-link">Plays</a>
+                </li>
+
+
+                <li class="navbar-item n1">
+                    <a href="offer.html" class="nav-link">Offer</a>
+                </li>
+                <li class="navbar-item n1">
+                    <a href="giftcard.html" class="nav-link">GiftCard</a>
+                </li>
+            </ul>
+
+        </div>
+        <div><a href="page.html"> <button class="btn btn-outline-light sin">Signin</button></a></div>
+    </nav>
+    <div class="container-fluid">
+        <section id="show-case">
+            <ul id="autoWidth2" class="cs-hidden">
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/h1.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/h7.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/h6.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/b2.webp">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/h9.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/h10.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/b1.jpg">
+                    </div>
+                </li>
+                <li class="item-a">
+                    <div class="simg">
+                        <img src="imagesstream/b3.jpg">
+                    </div>
+                </li>
+
+
+        </section>
+
+
+
+
+
+
+        <section id="last">
+            <h2 class="head">TAMIL HORROR</h2>
+            <ul id="autoWidth1" class="cs-hidden">
+                <a href="kanchan2.html">
+                    <li class="item-a">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/g1.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="dimamdi.html">
+                    <li class="item-b">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/g3.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="aranmamai.html">
+                    <li class="item-c">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/g4.webp">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="yaneruka.html">
+                    <li class="item-d">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/h11.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="maaya.html">
+                    <li class="item-e">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/g6.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="bayama.html">
+                    <li class="item-f">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/g7.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+        </section>
+
+
+
+        <div class="kids">
+            <h2>ENGLISH HORROR</h2>
+        </div>
+
+        <section id="kids-list">
+            <a href="the ring.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t1.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="conjuring.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t3.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="conjuring2.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t2.jpg">
+                    </div>
+                </div>
+            </a>
+
+            <a href="grudge.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t4.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="dontsleep.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t6.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="evildead.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t7.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="mirror.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t8.jpg">
+                    </div>
+                </div>
+            </a>
+            <a href="evil dead2.html">
+                <div class="ibox">
+                    <div class="i-img">
+                        <img src="imagesstream/t10.png">
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+
+        <section id="last">
+            <h2 class="head"><span style="color: red;">18+</span>HORROR</h2>
+            <ul id="autoWidth3" class="cs-hidden">
+                <a href="secondkuthu.html">
+                    <li class="item-a">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/1+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="aval.html">
+                    <li class="item-b">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/2+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="pizza.html">
+                    <li class="item-c">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/3+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="firstkuthu.html">
+                    <li class="item-d">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/4+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="ungala podonum.html">
+                    <li class="item-e">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/5+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <a href="maggy.html">
+                    <li class="item-e">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imagesstream/6+.jpg">
+                            </div>
+                        </div>
+                    </li>
+                </a>
+
+        </section>
+
+
+
+        <center>
+            <h1 class="lift" style="font-size: 50px; color: #fff;">OTHERS ARE <span style="color: red;"> COMING
+                    SOON.....................</span></h1>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <hr>
+    <footer class="footer-03" style="background-color:black; color: #fff; position: sticky;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-0 mb-4">
+
+                            <h2 class="footer-heading">HELP</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">About Us</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Contact Us</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Current Opening</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Press Release</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Team & Condition</a></li>
+                                <li><a href="#" class="py-1 d-block F1">FAQs</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading">COUNTRIES</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">Indonesia</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Singapore</a></li>
+                                <li><a href="#" class="py-1 d-block F1">UAE</a></li>
+                                <li><a href="#" class="py-1 d-block F1">sri lanka</a></li>
+                                <li><a href="#" class="py-1 d-block F1">West indies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+
+                            <h2 class="footer-heading">EXCLUASIVES</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">Watch Guide</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Fanhood</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Superstar</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Corporator Vouchers</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Gift Card</a></li>
+                                <li><a href="#" class="py-1 d-block F1">List MY Show</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Offer</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Stream</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-end">
+                        <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+                            <h2 class="footer-heading">Follow Us</h2>
+                            <div>
+                                <img src="images/18.jpg" class="img3">
+                            </div>
+                            <h2 class="footer-heading mt-5">Subscribe Us</h2>
+                            <form action="#" class="subscribe-form">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control rounded-left"
+                                        placeholder="Enter email address">
+                                    <butten class="btn btn-outline-light" style="margin-left: 2px;">Subscribe
+                                    </butten>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-md-6 col-lg-8">
+
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                        template
+                        is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Quicktickets.com</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                    <p class="mb-0 list-unstyled">
+                        <a class="mr-md-3" href="#">Terms &amp; Conditions</a>
+                        <a class="mr-md-3" href="#">Privacy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth,#autoWidth1,#autoWidth2,#autoWidth3,#autoWidth4').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth,autoWidth1,#autoWidth2,#autoWidth3,#autoWidth4').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

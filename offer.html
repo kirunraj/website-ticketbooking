@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offers</title>
+
+    
+    <link rel="shortcut icon" href="imagesstream/fav icon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/anotherDefault.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    /* HEADER AND NAV */
+
+    .kiran {
+        background-color: black;
+        position: sticky;
+        font-family: Forte;
+        font-size: 22px;
+    }
+
+    .button {
+        background-color: black;
+    }
+
+    .n1 {
+        float: right;
+    }
+
+    .img1 {
+        height: 245px;
+        margin: -17px;
+    }
+
+    .span1 {
+        height: 5px;
+        width: 5px;
+        margin-top: -3px;
+        margin-left: -12px;
+        font-size: 8px;
+    }
+
+    .sin {
+        margin-right: 27px;
+        height: 38px;
+        width: 84px;
+    }
+    @media screen and (max-width:500px){
+        .sin{
+            margin-left:180px ;
+        }
+        
+    }
+
+    /* FOOTER */
+    .F1 {
+        color: #fff;
+        list-style-type: none;
+
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .img3 {
+        height: 228px;
+        width: 310px;
+        border-radius: 20px;
+    }
+
+    .container {
+        height: 500px;
+    }
+
+    /* animate */
+    .animate {
+        width: 100%;
+        margin-top: 8px;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 342px;
+    }
+
+    /* slideshow */
+    .img2 {
+        height: 250px;
+        width: 507px;
+        border-radius: 20px;
+        margin: -10px;
+    }
+
+
+    .d1 {
+        margin-top: 29px;
+        font-size: 43px;
+        font-family: Forte;
+    }
+
+    body {
+        background-color: black;
+        font-family:Forte ;
+    }
+
+    input {
+        width: 50px;
+    }
+
+    footer {
+        font-family: Forte;
+    }
+    .card1 {
+        height: 344px;
+        width: 100%;
+        position: relative;
+        border: none;
+        
+    }
+    [data-aos="rotate-ac"] {
+  transform: rotate(180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-ac"].aos-animate {
+  transform: rotate(0deg);
+}
+
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+    
+
+</style>
+
+<body>
+
+    <header class="navbar">
+        <img src="imagesstream/r.gif" class="img1" style="border-radius: 210px;">
+        <form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search....">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light button" style="font-family: Forte;">Search</button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md  navbar-dark kiran">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="movie.html" class="nav-link">Movies</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="stream.html" class="nav-link">Stream <span class="badge span1"
+                            style="color: red; position: absolute;">NEW</span></a>
+                </li>
+                <li class="navbar-item  n1">
+                    <a href="horror.html" class="nav-link">horror<span class="badge span1"
+                            style="color: red; position: absolute;">NEW</span></a>
+                </li>
+                
+               
+                <li class="navbar-item">
+                    <a href="play.html" class="nav-link">Plays</a>
+                </li>
+                <li class="navbar-item n1">
+                    <a href="offer.html" class="nav-link">Offer</a>
+                </li>
+                <li class="navbar-item n1">
+                    <a href="giftcard.html" class="nav-link">GiftCard</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div><a href="page.html"> <button class="btn btn-outline-light sin">Signin</button></a></div>
+    </nav>
+    <div class="container-fluid">
+        <div class="card bg-white text-black card1" data-aos="fade-left" data-aos-duration="2000">
+            <img class="card-img" src="images/ki.jpg"style="height: 344px; ">
+            <div class="card-img-overlay">
+                <center><h5 class="card-title d1">TICKET</h5></center>
+                <center><p class="card-text d1">ALL TIME <span style="color: red;">OFFER </span> </p></center>
+                <center><p class="card-text d1"><span style="color: red; font-size: larger;">50%</span> </p></center>   
+            </div>
+        </div>
+        
+        <div class="card" style="margin: 100px; background-color: black; color: #fff;" data-aos="fade-up"
+        data-aos-anchor-placement="center-center">
+            <div class="card-header">
+             <center style="font-size: 22px;">ENJAY</center> 
+            </div>
+            <div class="card-body">
+              <center><h5 class="card-title">Special Offer for Movies</h5></center>
+            <center><p class="card-text"><span style="color: red; font-size: 30px;">15%</span></p></center>
+              <center><a href="page.html" class="btn btn-primary">Get Now</a></center>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 100px; background-color: black; color: #fff;" data-aos="fade-up"
+          data-aos-anchor-placement="center-center">
+              <div class="card-header">
+               <center style="font-size: 22px;">ENJAY</center> 
+              </div>
+              <div class="card-body">
+                <center><h5 class="card-title">Special Offer for Stream</h5></center>
+              <center><p class="card-text"><span style="color: red;  font-size: 30px;">22%</span></p></center>
+                <center><a href="page.html" class="btn btn-primary">Get Now</a></center>
+              </div>
+            </div>
+            <div class="card" style="margin: 100px; background-color: black; color: #fff;" data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
+                <div class="card-header">
+                 <center style="font-size: 22px;">ENJAY</center> 
+                </div>
+                <div class="card-body">
+                  <center><h5 class="card-title">Special Offer for horror</h5></center>
+                <center><p class="card-text"><span style="color: red;  font-size: 30px;">55%</span></p></center>
+                  <center><a href="page.html" class="btn btn-primary">Get Now</a></center>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card" style="background-color: black; color: #fff;"  data-aos="rotate-ac" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="card-body">
+                      <h5 class="card-title"><span style="color: red;">VIP</span> PACK</h5>
+                      <p class="card-text"> ONE YEAR<span style="color: red;  font-size: 30px;">Rs.1999/-</span></p>
+                      <a href="page.html" class="btn btn-primary">BUY</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card" style="background-color: black; color: #fff;"  data-aos="rotate-c" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="card-body">
+                      <h5 class="card-title"><span style="color: red;">NORMAL</span> PACK</h5>
+                      <p class="card-text"> ONE MONTH<span style="color: red;  font-size: 30px;"> RS.399/-</span></p>
+                      <a href="page.html" class="btn btn-primary">BUY</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+             
+
+
+
+
+
+</div>
+
+
+
+
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <hr>
+    <footer class="footer-03" style="background-color:black; color: #fff; position: sticky;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-md-0 mb-4">
+
+                            <h2 class="footer-heading">HELP</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">About Us</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Contact Us</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Current Opening</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Press Release</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Team & Condition</a></li>
+                                <li><a href="#" class="py-1 d-block F1">FAQs</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="footer-heading">COUNTRIES</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">Indonesia</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Singapore</a></li>
+                                <li><a href="#" class="py-1 d-block F1">UAE</a></li>
+                                <li><a href="#" class="py-1 d-block F1">sri lanka</a></li>
+                                <li><a href="#" class="py-1 d-block F1">West indies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-4">
+
+                            <h2 class="footer-heading">EXCLUASIVES</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-1 d-block F1">Watch Guide</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Fanhood</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Superstar</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Corporator Vouchers</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Gift Card</a></li>
+                                <li><a href="#" class="py-1 d-block F1">List MY Show</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Offer</a></li>
+                                <li><a href="#" class="py-1 d-block F1">Stream</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row justify-content-end">
+                        <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+                            <h2 class="footer-heading">Follow Us</h2>
+                            <div>
+                                <img src="images/18.jpg" class="img3">
+                            </div>
+                            <h2 class="footer-heading mt-5">Subscribe Us</h2>
+                            <form action="#" class="subscribe-form">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control rounded-left"
+                                        placeholder="Enter email address">
+                                    <butten class="btn btn-outline-light" style="margin-left: 2px;">Subscribe</butten>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-md-6 col-lg-8">
+
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Quicktickets.com</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                    <p class="mb-0 list-unstyled">
+                        <a class="mr-md-3" href="#">Terms &amp; Conditions</a>
+                        <a class="mr-md-3" href="#">Privacy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
